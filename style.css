@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #424242;
+}
+.navbar-link {
+  color: #e0e0e0;
+}
+#carouselExampleIndicators {
+  height: 200px;
+}
