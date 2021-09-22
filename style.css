@@ -5,9 +5,22 @@
 .navbar {
   background-color: #424242;
 }
-.navbar-link {
+.navbar-brand,
+.nav-link {
   color: #e0e0e0;
 }
-#carouselExampleIndicators {
-  height: 200px;
+.my-card-deck {
+  text-align: center;
+}
+.my-card {
+  display: inline-block;
+  border: 1px solid gray;
+  position: relative;
+}
+.my-card-reward {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
 }
