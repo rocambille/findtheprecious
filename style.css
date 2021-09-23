@@ -33,3 +33,16 @@
   flex-direction: column;
   margin-bottom: 1rem;
 }
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerUl {
+  display: inline;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+}
