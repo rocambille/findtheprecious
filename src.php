@@ -74,14 +74,6 @@ $characters = [
         </figure>
       <?php endforeach; ?>
 
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
     </section>
     <form class="form">
       <h1>Contact us</h1>
