@@ -1,3 +1,16 @@
+<?php
+$characters = [
+  [
+    "title" => "The Wizard",
+    "description" => "very powerful wizard",
+  ],
+  [
+    "title" => "Shrek",
+    "description" => "very bad Shrek",
+    "reward" => "1000",
+  ],
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,30 +57,31 @@
     <section class="my-card-deck">
       <h1>Fellows wanted dead (or alive if you want to eat them later)</h1>
 
-              <figure class="my-card">
+      <?php foreach($characters as $character): ?>
+        <figure class="my-card">
           <img
             class="my-card-img"
             src="https://picsum.photos/200/150"
-            alt="The Wizard"
+            alt="<?= $character["title"] ?>"
           />
           <figcaption class="my-card-caption">
-            <h2>The Wizard</h2>
-            <p class="">very powerful wizard</p>
-                      </figcaption>
+            <h2><?= $character["title"] ?></h2>
+            <p class=""><?= $character["description"] ?></p>
+            <?php if (isset($character["reward"])): ?>
+              <aside class="my-card-reward">Reward <?= $character["reward"] ?> gold coins</aside>
+            <?php endif; ?>
+          </figcaption>
         </figure>
-              <figure class="my-card">
-          <img
-            class="my-card-img"
-            src="https://picsum.photos/200/150"
-            alt="Shrek"
-          />
-          <figcaption class="my-card-caption">
-            <h2>Shrek</h2>
-            <p class="">very bad Shrek</p>
-                          <aside class="my-card-reward">Reward 1000 gold coins</aside>
-                      </figcaption>
-        </figure>
-      
+      <?php endforeach; ?>
+
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
     </section>
     <form class="form">
       <h1>Contact us</h1>
